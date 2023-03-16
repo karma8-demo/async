@@ -1,0 +1,8 @@
+﻿.dockerignore
+.editorconfig
+.git*
+.idea
+Dockerfile
+README.md
+database
+vendor
