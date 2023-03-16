@@ -13,7 +13,8 @@
         "ext-zend-opcache": "*",
         "amphp/amp": "*",
         "amphp/mysql": "*",
-        "amphp/parallel": "*"
+        "amphp/parallel": "*",
+        "symfony/dotenv": "*"
     },
     "autoload": {
         "psr-4": {
@@ -23,7 +24,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "apcu-autoloader": true,
         "discard-changes": true,
         "htaccess-protect": false,
         "notify-on-install": false,

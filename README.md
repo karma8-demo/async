@@ -38,7 +38,7 @@ composer install --no-dev
 
 Загрузить дамп БД с тестовыми данными в MySQL/MariaDB
 
-Проверить/исправить строку подключения к БД в `app/app.php:14`
+Проверить/исправить параметры подключения к БД в `.env`
 
 ### Использование
 
@@ -58,20 +58,12 @@ php app/app.php
 
 Docker Desktop (Windows, MacOS) или docker-cli и docker-compose (Linux)
 
-### Установка
+### Установка и запуск
 
 ```bash
 git clone https://github.com/karma8-demo/async.git
 cd async
-docker build --progress=plain --tag async .
-```
-
-### Использование
-
-Запустить микросервис с воркерами
-
-```bash
-docker run --interactive --tty async
+docker compose up --build
 ```
 
 Логи выводятся на экран
